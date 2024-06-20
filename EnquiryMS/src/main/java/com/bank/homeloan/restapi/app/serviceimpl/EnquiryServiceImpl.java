@@ -50,6 +50,8 @@ public class EnquiryServiceImpl implements EnquiryServicei{
 		e.setStatus("pending");
 		e.setCibilScore(null);
 		e.setDob(new Date());
+		
+		
 		return er.save(e);
 	}
 
