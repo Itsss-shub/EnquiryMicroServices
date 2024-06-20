@@ -1,5 +1,6 @@
 package com.bank.homeloan.restapi.app.serviceimpl;
 
+import java.util.Date;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -48,6 +49,7 @@ public class EnquiryServiceImpl implements EnquiryServicei{
 		
 		e.setStatus("pending");
 		e.setCibilScore(null);
+		e.setDob(new Date());
 		return er.save(e);
 	}
 
